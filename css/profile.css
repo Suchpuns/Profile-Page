@@ -1,0 +1,334 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    /* background-image: url(https://media.istockphoto.com/vectors/template-for-science-and-technology-presentation-plexus-style-vector-id1187621904?k=20&m=1187621904&s=612x612&w=0&h=0BApGKljnkao0LLCkNHQTfh-1sPRvnGWlqOvdjknf9o=); */
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin:auto;
+}
+
+.title {
+    text-decoration:underline
+
+}
+
+/*
+=========================
+         Boxes
+=========================
+*/
+
+
+.box {
+    width: 100%;
+}
+
+.box-about {
+    display: flex;
+    text-align: center;
+    flex-basis: 28%;
+}
+
+.about-1 {
+    flex: 1;
+}
+
+
+.about-2 {
+    flex: 1;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-color: gray
+}
+
+.about-3 {
+    flex: 1;
+}
+
+/*
+=========================
+         Links
+=========================
+*/
+
+
+a {
+    color: lightblue;
+}
+
+a:hover {
+    color: lightskyblue;
+}
+
+/*
+=========================
+         Button
+=========================
+*/
+
+
+
+button {
+    background-color: var(--primary-color);
+}
+
+
+/*
+=========================
+         Contacts
+=========================
+*/
+
+
+.contacts-icon {
+    color: var(--secondary-color);
+    width: 20px;
+    height: auto;
+    transform: scale(100%);
+    transition: transform 200ms ease-in;
+}
+
+.contacts-icon:hover {
+    transform: scale(130%);
+}
+
+.contacts-box {
+    align-self: center;
+    align-items: center;
+    display: flex;
+    margin: 0px;
+}
+
+.contacts-email {
+    fill: white;
+    flex: 1;
+
+}
+
+.contacts-facebook {
+    fill: white;
+    flex: 1;
+}
+
+.contacts-github {
+    fill: white;
+    flex: 1;
+}
+
+.contacts-space {
+    flex: 8;
+}
+
+.contacts-insta {
+    flex: 1;
+    fill: white;
+}
+
+.contacts-link {
+    flex: 1;
+}
+
+/*
+=========================
+         Header
+=========================
+*/
+
+
+.header {
+    align-items: center;
+    padding: 200px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.circle-pic {
+    border-radius: 50%;
+}
+
+.header-pic {
+    flex: 1;
+    padding: 10px;
+}
+.header-name {
+    flex: 2;
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+}
+
+.header-about {
+    flex: 4;
+}
+
+.parallax {
+    background-color: var(--primary-color);
+    background-image: url(https://media.discordapp.net/attachments/948061535106900058/983528125415690350/lines-background.png?width=1427&height=387);
+    /* Set a specific height */
+    min-height: 100vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/*
+========================================
+          Fade and Animations
+========================================
+*/
+.fade-in {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: opacity 600ms ease-in, transform 500ms ease-in;
+}
+
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+/* .shift-in-down {
+    transform: translateY(25%);
+    transition: transform 500ms ease-in;
+}
+
+.shift-in-down.appear {
+    transform: translateY(0%);
+} */
+
+
+
+
+/*
+========================================
+       Body Content and Sections
+========================================
+*/
+
+
+.body-content {
+    height: 3000px;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.content {
+    padding-top: 20px;
+    display: flex;
+}
+
+.col {
+    flex: 1;
+}
+
+.content-logo {
+    display: flex;
+    align-items: center;
+}
+
+.vert-center-text {
+    padding: 80px;
+}
+
+
+.center-content {
+    align-items: center;
+    text-align: center;
+}
+
+
+.section2, .section3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+/*
+========================================
+              Riflelytics
+========================================
+*/
+.riflelytics-logo {
+    transform: scale(20%);
+}
+
+.riflelytics-text {
+    font-family: "Play", sans-serif;
+}
+
+.riflelytics-target {
+    padding: 70px;
+}
+
+.riflelytics-btn {
+    height: 70px;
+    width: 200px;
+    color: black;
+    background-color: #84ceeb;
+    border-radius: 12px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+    font-size: 20px;
+    transition: background-color 200ms ease-in;
+    cursor: pointer;
+}
+
+.riflelytics-btn:hover {
+    background-color: #2992bb;
+}
+
+
+/* CSS */
+.button-9 {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button-9:disabled {
+  cursor: default;
+}
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
